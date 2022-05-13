@@ -3,12 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ProjectStore.Models
+namespace ProjectStore.Models.DTOs
 {
-    public class Book
+    public class CreateBookDTO
     {
-        public int Id { get; set; }
-        public int Price { get; set; }  
+        public int Price { get; set; }
         public string Title { get; set; }
 
         public string Author { get; set; }

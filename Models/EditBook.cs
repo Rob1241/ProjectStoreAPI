@@ -5,10 +5,9 @@ using System.Threading.Tasks;
 
 namespace ProjectStore.Models
 {
-    public class Book
+    public class EditBook
     {
-        public int Id { get; set; }
-        public int Price { get; set; }  
+        public int Price { get; set; }
         public string Title { get; set; }
 
         public string Author { get; set; }

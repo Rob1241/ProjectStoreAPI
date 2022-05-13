@@ -16,15 +16,11 @@ namespace ProjectStore.Data
         public DbContextOptions<DataBaseContext> Options {get;}
         public DbSet<Book> BookDbSet { get; set; }
         public DbSet<Customer> CustomerDbSet { get; set; }
-        public DbSet<Furniture> FurnitureDbSet { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Customer>()
                 .Property(r => r.Name)
-                .IsRequired();
-            modelBuilder.Entity<Customer>()
-                .Property(s => s.Surname)
                 .IsRequired();
         }
 

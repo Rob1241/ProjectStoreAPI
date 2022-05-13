@@ -3,11 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ProjectStore.Models
+namespace ProjectStore.Models.DTOs
 {
-    public class Customer
+    public class CreateCustomerDTO
     {
-        public int Id { get; set; }
         public string Login { get; set; }
 
         public string Name { get; set; }
